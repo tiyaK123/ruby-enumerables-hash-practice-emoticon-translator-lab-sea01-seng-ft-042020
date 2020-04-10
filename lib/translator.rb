@@ -8,7 +8,7 @@ emoticon = YAML.load_file(path)
  hash = {"emoticon" => {}, "emoticon_symbols" => {}}
  emoticon.each do |k|
    #hash[:emoticon]=[k]
-     hash[:emoticon_symbols] = 
+     hash[:emoticon_symbols] = [k] 
  end
    emoticon.each do |english, japanese|
      
