@@ -9,11 +9,12 @@ emoticon = YAML.load_file(path)
  emoticon.each do |k|
    hash[:emoticon]={}
      hash[:emoticon_symbols] = {} 
- end
+ 
    emoticon.each do |english, japanese|
      
     hash["emoticon"][japanese[1]] = english  
     hash["emoticon_symbols"][japanese[0]] =japanese[1]
+end
 end
  hash
 end
